@@ -1,10 +1,10 @@
-# Welcome to the Urban Data Platfrom of Emerging technologies playgroud!
+# Welcome to the Urban Data Platfrom!
 
 **Some information about the project**
 
 # Documentation
 
-## Table of conte## Headingnts
+## Table of contents
 
 - [UDP API](#UDP-API)
   - [Introduction](#Introduction)
