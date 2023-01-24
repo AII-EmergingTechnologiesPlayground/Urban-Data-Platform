@@ -1,4 +1,4 @@
-# Welcome to the Urban Data Platfrom of Emerging technologies playgroud!
+# Welcome to the Urban Data Platfrom!
 
 **Some information about the project**
 
