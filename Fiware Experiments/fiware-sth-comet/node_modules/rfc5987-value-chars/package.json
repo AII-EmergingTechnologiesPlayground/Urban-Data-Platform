@@ -1,0 +1,16 @@
+{
+	"name": "rfc5987-value-chars",
+	"version": "1.0.0",
+	"description": "RFC5987 value-chars encoding/decoding",
+	"scripts": {
+		"test": "node test"
+	},
+	"repository": "srcagency/rfc5987-value-chars",
+	"keywords": [
+		"rfc5987"
+	],
+	"license": "MIT",
+	"dependencies": {
+		"tape": "^4.8.0"
+	}
+}
