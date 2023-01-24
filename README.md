@@ -4,7 +4,7 @@
 
 # Documentation
 
-## Table of conte## Headingnts
+## Table of contents
 
 - [UDP API](#UDP-API)
   - [Introduction](#Introduction)
