@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "fdcf6356-86bd-404b-9412-ca867cb64169",
+		"name": "STH",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add value enitity STH",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "application/json",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "Fiware-Service",
+						"value": "iot",
+						"type": "default"
+					},
+					{
+						"key": "Fiware-ServicePath",
+						"value": "/",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "100",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1026/v2/entities/WaterLevel1/attrs/amount/value",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"v2",
+						"entities",
+						"WaterLevel1",
+						"attrs",
+						"amount",
+						"value"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new enitity STH Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Fiware-Service",
+						"value": "iot",
+						"type": "default"
+					},
+					{
+						"key": "Fiware-ServicePath",
+						"value": "/",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"description\": \"Notify STH-Comet of all Sensor count changes\",\n  \"subject\": {\n    \"entities\": [\n      {\n        \"idPattern\": \".*\"\n      }\n    ]\n  },\n  \"notification\": {\n    \"http\": {\n      \"url\": \"http://sth-comet:8666/notify\"\n    },\n    \"attrs\": [\n      \"count\"\n    ],\n    \"attrsFormat\": \"legacy\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1026/v2/entities/waterLevel1/attrs/amount",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"v2",
+						"entities",
+						"waterLevel1",
+						"attrs",
+						"amount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get history STH",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "application/json",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "Fiware-Service",
+						"value": "iot",
+						"type": "default"
+					},
+					{
+						"key": "Fiware-ServicePath",
+						"value": "/",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1026/v2/entities",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"v2",
+						"entities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get history STH Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "application/json",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "Fiware-Service",
+						"value": "iot",
+						"type": "default"
+					},
+					{
+						"key": "Fiware-ServicePath",
+						"value": "/",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1026/v2/entities",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"v2",
+						"entities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get enitity STH Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-type",
+						"value": "application/json",
+						"type": "default",
+						"disabled": true
+					},
+					{
+						"key": "Fiware-Service",
+						"value": "iot",
+						"type": "default"
+					},
+					{
+						"key": "Fiware-ServicePath",
+						"value": "/",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:1026/v2/entities",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"v2",
+						"entities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new subscription",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Fiware-Service",
+						"value": "iot"
+					},
+					{
+						"key": "Fiware-ServicePath",
+						"value": "/"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"description\": \"Notify STH-Comet of all changes\",\n  \"subject\": {\n    \"entities\": [\n      {\n        \"idPattern\": \".*\"\n      }\n    ]\n  },\n  \"notification\": {\n    \"http\": {\n      \"url\": \"http://sth:8666/notify\"\n    },\n    \"attrsFormat\": \"legacy\"\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1026/v2/subscriptions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"v2",
+						"subscriptions",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
