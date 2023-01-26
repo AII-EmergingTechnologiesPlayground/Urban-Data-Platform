@@ -1,4 +1,4 @@
-# Welcome to the Urban Data Platfrom!
+# Welcome to the Urban Data Platform!
 
 On this Github repository you can read about which components have been built. Here you can find which FIware components we used, what demos we made and the current version of the UDP. You can also read the documentation on the use of the API, how to set up a development/test environment and how to use the Proof of Concept.
 
